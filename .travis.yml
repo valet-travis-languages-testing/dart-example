@@ -1,0 +1,11 @@
+language: dart
+dart:
+- stable
+- "1.15.0"
+
+dart_task:
+- test: --platform vm
+- test: --platform chrome
+  install_dartium: true
+- dartanalyzer: --fatal-warnings lib
+- dartfmt
